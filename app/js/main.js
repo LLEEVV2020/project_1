@@ -56,33 +56,13 @@ $(document).ready(function () {
     $(this).parent().parent().parent().prev().find('img').attr('src', srcimg)
   })
 
-<<<<<<< HEAD
 
   $('a[href^="#"]').click(function(){
     let anchor = $(this).attr('href');
     $('html, body').animate({
     scrollTop:  $(anchor).offset().top
     }, 600);
-    });
-
-  $('a[href^="#"]').click(function(){
-    let anchor = $(this).attr('href');
-    $('html, body').animate({
-    scrollTop:  $(anchor).offset().top
-    }, 600);
-=======
-  $('a[href^="#"]').click(function(){ 
-    let anchor = $(this).attr('href');  
-    $('html, body').animate({           
-    scrollTop:  $(anchor).offset().top  
-    }, 600);                            
->>>>>>> 58f24eecfb68b60de05a5ea4dc0f49145f555b77
   });
-
-
-
-
-
 
   // Маска ввода номера телефона (плагин maskedinput)
   $(function($){
