@@ -1850,6 +1850,9 @@ $mon: 'Montserrat';
     justify-content: space-between;
     align-items: center;
 
+    img:last-child {
+      display: none;
+    }
 
     &.active {
       .questions-item__minus {
