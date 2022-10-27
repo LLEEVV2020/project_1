@@ -53,25 +53,7 @@ $(document).ready(function () {
 
   
 
-  $(document).ready(function() {
-    $('.modal__form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-      
-      if (this.name.value == '' || this.phone.value == '' || this.phone.email == '' ) {
-        valid = false;
-        return valid;
-      }
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(this).serialize()
-      }).done(function() {
-        //$('.js-overlay-thank-you').fadeIn();
-        $(this).find('input').val('');
-        $('.modal__form').trigger('reset');
-      });
-      return false;
-    });
-  });
+
 
   // Маска ввода номера телефона (плагин maskedinput)
   $(function($){
