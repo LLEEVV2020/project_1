@@ -1907,6 +1907,14 @@ $mon: 'Montserrat';
     line-height: 56px;
     color: #171427;
     margin-bottom: 13px;
+    &::after{
+      content: "";
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      background: url(../images/delivery-img.svg) no-repeat;
+      margin-left: 10px;
+    }
   }
 
   &-about__descr {
