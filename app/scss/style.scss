@@ -1882,11 +1882,14 @@ $mon: 'Montserrat';
 
 .delivery {
   padding-bottom: 80px;
+  
 
   &-inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   &__title {
