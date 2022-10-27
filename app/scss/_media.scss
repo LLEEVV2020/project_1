@@ -47,9 +47,13 @@ line-height: 18px;
   }
   .delivery__options{
     position: relative;
+    flex-direction: column;
+    padding-left: 40px;
   }
   .delivery__options::before{
     position: absolute;
+    left: 0;
+    top: 0;
     content: "";
     background-image: url("../images/blocknot-form.svg");
     height: 32px;
@@ -57,8 +61,12 @@ line-height: 18px;
   }
   .delivery__options-link{
     color: #6F6D79;
+    margin-bottom: 0;
+    margin-right: 0;
   }
-
+  .delivery-list__loca::before{
+    left: 4px;
+  }
 }
 
 @media (max-width: 515px) {
