@@ -1903,6 +1903,14 @@ $mon: 'Montserrat';
   }
   &-inner__form{
     max-width: 610px;
+    @media only screen and (max-width: 1240px) {
+      .container{
+        width: 100%;
+      }
+      
+    }
+
+
   }
 
   &__title {
