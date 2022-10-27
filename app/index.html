@@ -1425,6 +1425,7 @@
 </section>
     <section class="delivery" id="contacts">
       <div class="delivery-inner">
+
         <!-- текст блока формы -->
         <div class="delivery-inner__about">
           <div class="container">
@@ -1468,24 +1469,24 @@
             <form class="delivery-form">
               <div class="delivery-form__block">
                 <div>
-                  <label for="name">Фамилия</label>
+                  <label class="delivery-form__label" for="name">Фамилия</label>
                   <input class="delivery-form__input" type="text" id="lastname" name="lastname"
                     placeholder="Введите фамилию">
                 </div>
 
                 <div>
-                  <label for="name">Имя</label>
+                  <label class="delivery-form__label" for="name">Имя</label>
                   <input class="delivery-form__input" type="text" id="name" name="name" placeholder=" Введите имя" />
                 </div>
 
               </div>
-              <label>E-mail</label>
+              <label class="delivery-form__label">E-mail</label>
               <input name="email" class="delivery-form__input" type="text" placeholder="you@company.com">
 
-              <label>Телефон</label>
+              <label class="delivery-form__label">Телефон</label>
               <input name="phone" class="delivery-form__input" type="text" placeholder="Введите номер">
 
-              <label>Сообщение</label>
+              <label class="delivery-form__label">Сообщение</label>
 
               <textarea  name="message"  class="delivery-form__area"
                 placeholder="Здраствуйте! Хочу заказать для своего магазина 200 худи с замком в чёрном, молочном и сером цвете"></textarea>
@@ -1494,7 +1495,7 @@
             </form>
           </div>
         </div>
-
+      
       </div>
     </section>
 
@@ -1504,15 +1505,15 @@
       <div class="modal__title">Оставить заявку</div>
       <form action="#" class="modal__form">
         <div class="modal__block">
-          <label for="name">Имя</label>
+          <label  for="name">Имя</label>
           <input type="text" id="name" name="name" placeholder="Введите имя" />
         </div>
         <div class="modal__block">
-          <label for="tel">Телефон</label>
+          <label  for="tel">Телефон</label>
           <input type="tel" id="tel" required name="name" placeholder="Введите номер" />
         </div>
         <div class="modal__block">
-          <label for="mail">E-mail</label>
+          <label  for="mail">E-mail</label>
           <input type="email" id="mail" name="name" placeholder="you@company.com" />
         </div>
         <button class="modal__btn">Отправить</button>
