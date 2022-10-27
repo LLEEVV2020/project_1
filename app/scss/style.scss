@@ -1821,14 +1821,14 @@ $mon: 'Montserrat';
     border-radius: 100px;
     position: relative;
     cursor: pointer;
-    padding: 43px 50px;
+
   }
 
 
 
   &-items__item {
     border-bottom: 2px solid rgba(179, 179, 179, 0.79);
-    padding: 20px 50px;
+    padding: 43px 50px;
 
     &:last-child {
       border-bottom: none
@@ -2069,7 +2069,8 @@ $mon: 'Montserrat';
     border-radius: 37px;
     border: none;
     padding: 20px;
-    max-width: 250px;
+    max-width: 298px;
+    min-height: 74px;
   }
 }
 
