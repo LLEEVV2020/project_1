@@ -2039,6 +2039,9 @@ $mon: 'Montserrat';
     font-size: 17px;
     margin-bottom: 20px;
     display: block;
+    &::placeholder {
+      color: #A49B9B;
+    }
   }
 
   &-form__area {
@@ -2050,6 +2053,9 @@ $mon: 'Montserrat';
     font-weight: 300;
     font-size: 17px;
     line-height: 27px;
+    &::placeholder {
+      color: #A49B9B;
+    }
   }
 
   &-form__btn {
