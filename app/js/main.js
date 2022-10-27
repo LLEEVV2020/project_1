@@ -56,23 +56,23 @@ $(document).ready(function () {
     $(this).parent().parent().parent().prev().find('img').attr('src', srcimg)
   })
 
-<<<<<<< HEAD
+
   $('a[href^="#"]').click(function(){
     let anchor = $(this).attr('href');
     $('html, body').animate({
     scrollTop:  $(anchor).offset().top
     }, 600);
     });
-=======
-  $('a[href^="#"]').click(function(){ 
-    let anchor = $(this).attr('href');  
-    $('html, body').animate({           
-    scrollTop:  $(anchor).offset().top  
-    }, 600);                            
+
+  $('a[href^="#"]').click(function(){
+    let anchor = $(this).attr('href');
+    $('html, body').animate({
+    scrollTop:  $(anchor).offset().top
+    }, 600);
   });
 
 
-  
+
 
 
 
@@ -80,6 +80,6 @@ $(document).ready(function () {
   $(function($){
     $('[name="phone"]').mask("+7(999) 999-9999");
   });
->>>>>>> 091e16936a2e2c423376cdd5396bbe87a638f6a3
+
 
 })

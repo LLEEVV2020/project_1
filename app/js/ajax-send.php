@@ -22,7 +22,6 @@ $mail->addAddress('info@mf-vi.ru', 'Лев');
 $mail->Subject = 'Данные с '.$_SERVER['SERVER_NAME'];
 
 
-
 $body = '<h2 style="margin-top: 0;">Форма с сайта"'.$_SERVER['SERVER_NAME'].'"</h2>';
 
 if(trim(!empty($_POST['name']))){
@@ -42,10 +41,6 @@ if(trim(!empty($_POST['phone']))){
 if(trim(!empty($_POST['message']))){
     $body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
 }
-
-
-
-
 
 
 $mail->Body = $body;
