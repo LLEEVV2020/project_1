@@ -1800,7 +1800,7 @@ $mon: 'Montserrat';
 .questions {
   padding-bottom: 110px;
   background-image: url("../images/t-short.png");
-  background-position:center left;
+  background-position: center left;
   background-repeat: no-repeat;
 
   &__title {
@@ -1845,7 +1845,8 @@ $mon: 'Montserrat';
 
 
   }
-  &-item__body{
+
+  &-item__body {
     padding: 20px;
     display: none;
   }
@@ -1855,6 +1856,7 @@ $mon: 'Montserrat';
     justify-content: space-between;
     align-items: center;
     padding-right: 30px;
+
     @media only screen and (min-width: 992px) {
       padding-right: 90px;
     }
@@ -1884,13 +1886,12 @@ $mon: 'Montserrat';
 
 .delivery {
   padding-bottom: 80px;
-  
+
 
   &-inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
     margin: 0 auto;
   }
 
@@ -2006,19 +2007,19 @@ $mon: 'Montserrat';
     display: flex;
     justify-content: space-between;
   }
-  &-form__label{
-    // font-family: 'Hind';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 30px;
-color: #171427;
+
+  &-form__label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #171427;
   }
 
   &-form__input {
     border: 4px solid #E8E6E6;
     border-radius: 8px;
-    padding: 14px  90px  15px 25px;
+    padding: 14px 90px 15px 25px;
 
     margin-bottom: 20px;
     display: block;
