@@ -1904,6 +1904,7 @@ $mon: 'Montserrat';
   &-inner__form{
     max-width: 610px;
     @media only screen and (max-width: 1240px) {
+      margin-bottom: 38px;
       .container{
         width: 100%;
       }
