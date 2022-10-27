@@ -27,6 +27,51 @@
       line-height: 9px;
     }
   }
+  .delivery-images{
+    display: none;
+  }
+  .delivery-form__input{
+    padding: 8px 15px;
+    border: 2.4px solid #E8E6E6;
+border-radius: 4.8px;
+  }
+  .delivery-form__input::placeholder{
+    font-weight: 300;
+font-size: 11px;
+line-height: 18px;
+
+  }
+  .delivery-form__label{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .delivery__options{
+    position: relative;
+  }
+  .delivery__options::before{
+    position: absolute;
+    content: "";
+    background-image: url("../images/blocknot-form.svg");
+    height: 32px;
+    width: 32px;
+  }
+  .delivery__options-link{
+    color: #6F6D79;
+  }
+
+}
+
+@media (max-width: 515px) {
+  .delivery-form__input--left ,
+.delivery-form__input--right{
+width: 200px;
+}
+.delivery-about__time{
+  display: none;
+}
+.delivery-form__btn{
+  margin-bottom: 40px;
+}
 }
 
 @media (max-width: 450px) {
@@ -52,4 +97,8 @@
       line-height: 23px;
     }
   }
+.delivery-form__input--left ,
+.delivery-form__input--right{
+width: 170px;
+}
 }
