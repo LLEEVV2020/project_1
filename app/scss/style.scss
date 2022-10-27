@@ -1897,7 +1897,7 @@ $mon: 'Montserrat';
     margin: 0 auto;
   }
   &-inner__form{
-    max-width: 645px;
+    max-width: 610px;
   }
 
   &__title {
@@ -2011,6 +2011,9 @@ $mon: 'Montserrat';
   &-form__block {
     display: flex;
     justify-content: space-between;
+    input{
+      max-width: 270px;
+    }
   }
 
   &-form__label {
