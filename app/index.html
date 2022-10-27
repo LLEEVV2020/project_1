@@ -1366,25 +1366,15 @@
       </div>
     </section>
 
-<<<<<<< HEAD
-    <section class="delivery">
+
+    <section class="delivery" id="contacts">
       <div class="delivery-inner">
         <!-- текст блока формы -->
         <div class="delivery-inner__about">
           <div class="container">
             <h2 class="delivery__title">Напишите нам</h2>
-            <h4 class="delivery-about-descr">Мы свяжемся с вами в течение 5 минут.</h4>
+            <h4 class="delivery-about__descr">Мы свяжемся с вами в течение 5 минут.</h4>
             <p class="delivery-about__time">ПН-ПТ: с 10:00 до 18:00</p>
-=======
-    <section class="delivery" id="contacts">
-        <div class="delivery-inner">
-          <!-- текст блока формы -->
-          <div class="delivery-inner__about">
-            <div class="container">
-              <h2 class="delivery__title">Напишите нам</h2>
-                <h4 class="delivery-about__descr">Мы свяжемся с вами в течение 5 минут.</h4>
-                <p class="delivery-about__time">ПН-ПТ: с 10:00 до 18:00</p>
->>>>>>> 5024ef9e9440ae4d9cb03d9e005afe537a50c707
 
             <ul class="delivery-about-list">
               <li class="delivery-list__item  delivery-list__phone">
@@ -1404,7 +1394,7 @@
               </li>
             </ul>
             <div class="delivery__options">
-              <p class="delivery__options-link">ИНН:
+              <p class="delivery__options-link delivery__options-link--one">ИНН:
                 6155 0888 4922
               </p>
               <p class="delivery__options-link">ОГРНИП:
@@ -1417,16 +1407,46 @@
 
         <!-- форма -->
         <div class="delivery-inner__form">
-          <div class="container"></div>
+          <div class="container">
+            <h2 class="delivery-form__title">Наша дружная команда будет рада получить от вас весточку! </h2>
+            <form class="delivery-form">
+              <div class="delivery-form__block">
+                <div>
+                  <label for="name">Фамилия</label>
+                  <input class="delivery-form__input" type="text" id="lastname" name="name"
+                    placeholder="Введите фамилию">
+                </div>
+
+                <div>
+                  <label for="name">Имя</label>
+                  <input class="delivery-form__input" type="text" id="name" name="name" placeholder=" Введите имя" />
+                </div>
+
+              </div>
+              <label>E-mail</label>
+              <input class="delivery-form__input" type="text" placeholder="you@company.com">
+
+              <label>Телефон</label>
+              <input class="delivery-form__input" type="text" placeholder="Введите номер">
+
+              <label>Сообщение</label>
+
+              <textarea class="delivery-form__area"
+                placeholder="Здраствуйте! Хочу заказать для своего магазина 200 худи с замком в чёрном, молочном и сером цвете"></textarea>
+
+              <button class="delivery-form__btn">Отправить сообщение</button>
+            </form>
+          </div>
         </div>
 
       </div>
+
   </div>
   </section>
   </div>
 
-
-
+  </div>
+  </div>
 
 
 

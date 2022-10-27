@@ -100,7 +100,8 @@ $mon: 'Montserrat';
           //color: #6a55dc;
         }
 
-        &.active, &:hover {
+        &.active,
+        &:hover {
           font-weight: 600;
 
           &::before {
@@ -1777,25 +1778,33 @@ $mon: 'Montserrat';
   }
 }
 
-@media only screen and (min-width: 768px){
-  .header__items{
+@media only screen and (min-width: 768px) {
+  .header__items {
     min-height: 58px;
   }
-  .header__logo{
+
+  .header__logo {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
 }
-@media only screen and (min-width: 992px){
-  .header__items{
+
+@media only screen and (min-width: 992px) {
+  .header__items {
     min-height: 75px;
   }
 }
 
 .delivery {
+  padding-bottom: 80px;
 
+  &-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
   &__title {
     font-style: normal;
@@ -1806,71 +1815,142 @@ $mon: 'Montserrat';
     margin-bottom: 13px;
   }
 
-  &-about-descr {
+  &-about__descr {
     font-family: "Hend";
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 40px;
     color: rgba(23, 20, 39, 0.72);
+    margin-bottom: 5px;
   }
- &-about__time{
-  font-family: 'Hind';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 32px;
-color: rgba(23, 20, 39, 0.72);
- }
- &-list__item{
-  font-family: 'Hind';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 40px;
-color: rgba(23, 20, 39, 0.81);
-position: relative;
-padding-right: 25px;
- }
 
- &-list__item::before{
-  position: absolute;
-  content: "";
-  top: 0;
-left: 0;
-  width: 36px;
-  height: 36px;
- }
+  &-about__time {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(23, 20, 39, 0.72);
+    margin-bottom: 10px;
+  }
 
-&-list__phone::before{
+  &-list {
+    padding-top: 10px;
+  }
 
-  background-image: url("../images/phone-form.svg");
+  &-list__item {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgba(23, 20, 39, 0.81);
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 15px;
+  }
 
-}
-&-list__email::before{
+  &-list__item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+  }
 
-  background-image: url("../images/email-phone.svg");
+  &-list__phone::before {
+
+    background-image: url("../images/phone-form.svg");
+
+  }
+
+  &-list__email::before {
+
+    background-image: url("../images/email-phone.svg");
 
 
-}
-&-list__loca::before{
+  }
 
-  background-image: url("../images/location-form.svg");
-}
+  &-list__loca::before {
+    width: 24px;
+    background-image: url("../images/location-form.svg");
+  }
 
-&__options{
-  display: flex;
-}
-&__options-link{
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 23px;
-color: #171427;
-margin-bottom: 20px;
-}
+  &__options {
+    display: flex;
+  }
 
+  &__options-link {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    color: #171427;
+    margin-bottom: 20px;
+  }
+
+  &__options-link--one {
+    margin-right: 70px;
+  }
+
+  // form
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  &-form__title {
+    font-family: 'Hend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgba(23, 20, 39, 0.62);
+    margin-bottom: 20px;
+  }
+
+  &-form__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-form__input {
+    border: 4px solid #E8E6E6;
+    border-radius: 8px;
+    padding: 14px 30px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &-form__area {
+    resize: none;
+    margin-bottom: 35px;
+    padding: 20px 25px 90px;
+    border: 4px solid #E8E6E6;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  &-form__btn {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #171427;
+    border-radius: 37px;
+    border: none;
+    padding: 20px;
+    max-width: 250px;
+  }
 }
 
 @import "media";
