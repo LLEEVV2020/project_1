@@ -18,6 +18,19 @@ $(document).ready(function () {
     }
   })
 
+
+  // questions
+  $('.questions-item__header').click(function () {
+    $('.questions-item__header').removeClass('active')
+    $('.questions-item__body').slideUp(300)
+    $(this).toggleClass('active')
+    if ($('.questions-item__header').hasClass('active')) {
+      $(this).next().slideToggle(300)
+    }
+  })
+
+  //
+
   $('.header__burger').click(function () {
     $(this).children().toggleClass('active')
     $('.header__item').toggleClass('active')
@@ -43,11 +56,11 @@ $(document).ready(function () {
     $(this).parent().parent().parent().prev().find('img').attr('src', srcimg)
   })
 
-  $('a[href^="#"]').click(function(){ 
-    let anchor = $(this).attr('href');  
-    $('html, body').animate({           
-    scrollTop:  $(anchor).offset().top  
-    }, 600);                            
+  $('a[href^="#"]').click(function(){
+    let anchor = $(this).attr('href');
+    $('html, body').animate({
+    scrollTop:  $(anchor).offset().top
+    }, 600);
     });
 
 })
