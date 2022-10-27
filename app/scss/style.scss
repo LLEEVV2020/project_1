@@ -1840,15 +1840,24 @@ $mon: 'Montserrat';
     line-height: 31px;
     color: #171427;
     padding: 50px;
+
+
   }
   &-item__body{
     padding: 20px;
+    display: none;
   }
 
   &-item__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 30px;
+    @media only screen and (min-width: 992px) {
+      padding-right: 90px;
+    }
+
+    
 
     img:last-child {
       display: none;
