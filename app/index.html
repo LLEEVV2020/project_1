@@ -1470,7 +1470,7 @@
               <div class="delivery-form__block">
                 <div>
                   <label for="name">Фамилия</label>
-                  <input class="delivery-form__input" type="text" id="lastname" name="name"
+                  <input class="delivery-form__input" type="text" id="lastname" name="lastname"
                     placeholder="Введите фамилию">
                 </div>
 
@@ -1481,17 +1481,17 @@
 
               </div>
               <label>E-mail</label>
-              <input class="delivery-form__input" type="text" placeholder="you@company.com">
+              <input name="email" class="delivery-form__input" type="text" placeholder="you@company.com">
 
               <label>Телефон</label>
-              <input class="delivery-form__input" type="text" placeholder="Введите номер">
+              <input name="phone" class="delivery-form__input" type="text" placeholder="Введите номер">
 
               <label>Сообщение</label>
 
-              <textarea class="delivery-form__area"
+              <textarea  name="message"  class="delivery-form__area"
                 placeholder="Здраствуйте! Хочу заказать для своего магазина 200 худи с замком в чёрном, молочном и сером цвете"></textarea>
 
-              <button class="delivery-form__btn">Отправить сообщение</button>
+              <button class="delivery-form__btn btn-send">Отправить сообщение</button>
             </form>
           </div>
         </div>
@@ -1520,7 +1520,35 @@
       </form>
     </div>
 
+<<<<<<< HEAD
     <script src="js/main.min.js"></script>
+=======
+
+
+  <!-- modal  -->
+
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal__title">Оставить заявку</div>
+    <form action="#" class="modal__form">
+      <div class="modal__block">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя" />
+      </div>
+      <div class="modal__block">
+        <label for="tel">Телефон</label>
+        <input type="tel" id="tel" required name="phone" placeholder="Введите номер" />
+      </div>
+      <div class="modal__block">
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" name="email" placeholder="you@company.com" />
+      </div>
+      <button class="modal__btn btn-send">Отправить</button>
+    </form>
+  </div>
+
+
+  <script src="js/main.min.js"></script>
+>>>>>>> 091e16936a2e2c423376cdd5396bbe87a638f6a3
 </body>
 
 </html>
