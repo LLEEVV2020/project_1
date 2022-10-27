@@ -1890,8 +1890,11 @@ $mon: 'Montserrat';
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
+  }
+  &-inner__form{
+    max-width: 612px;
   }
 
   &__title {
@@ -2049,5 +2052,6 @@ color: #171427;
     max-width: 250px;
   }
 }
+
 
 @import "media";
